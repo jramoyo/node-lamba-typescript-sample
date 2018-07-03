@@ -62,6 +62,10 @@ build/
 coverage/
 dist/
 
+# Terraform
+.terraform
+terraform.tfstate*
+
 # IDE
 .idea
 *.iml

@@ -1,1 +1,1 @@
-# node-lamba-typescript-sample
+# node-lambda-typescript-sample
