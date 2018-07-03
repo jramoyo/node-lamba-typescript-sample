@@ -23,7 +23,7 @@ gulp.task('lint', () => {
 
 gulp.task('compile', ['lint'], (done) => {
   del(['dist/**']).then(() => {
-    let tsResult = gulp.src('src/app/**/*.ts')
+    const tsResult = gulp.src('src/app/**/*.ts')
           .pipe(tsProject())
           .on('error', (err) => { throw err })
     return tsResult.js.pipe(debug({ title: 'ts' }))

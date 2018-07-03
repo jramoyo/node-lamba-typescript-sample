@@ -3,6 +3,8 @@ const del = require('del')
 
 require('./gulp-tasks/clean')
 require('./gulp-tasks/compile')
+require('./gulp-tasks/install')
+require('./gulp-tasks/package')
 require('./gulp-tasks/test')
 
-gulp.task('default', ['compile' ])
+gulp.task('default', ['test' ])
