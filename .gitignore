@@ -60,3 +60,7 @@ typings/
 # Build directories
 dist/
 coverage/
+
+# IDE
+.idea
+*.iml
