@@ -37,6 +37,8 @@ module "persons_api_persons_resource_get" {
 }
 
 resource "aws_api_gateway_deployment" "persons_api_deployment" {
+  depends_on  = ["module.persons_api_persons_resource_get"]
+
   rest_api_id = "${aws_api_gateway_rest_api.persons_api.id}"
   stage_name  = "demo"
 }
